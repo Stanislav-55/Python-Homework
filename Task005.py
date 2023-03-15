@@ -4,5 +4,6 @@
 
 distance = int(input("Сколько машина проезжает в день: "))
 route = int(input("Длинна маршрута: "))
-days = round(route/distance+0.5)
+# days = round(route/distance+0.5)
+days = (distance + route - 1) // distance
 print(f"Машина проедет маршрут в {route} километров за {days} дней")
